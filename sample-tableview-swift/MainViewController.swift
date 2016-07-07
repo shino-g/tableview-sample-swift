@@ -9,7 +9,6 @@ class MainViewController: UIViewController, MainTableDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-//        let mainTableViewController        =
         mainTableViewController.view.frame = CGRectMake( 0, 15, self.view.bounds.size.width, self.view.bounds.size.height - 50 )
         mainTableViewController.model_list = modelList.getList()
         mainTableViewController.delegate   = self
@@ -17,7 +16,7 @@ class MainViewController: UIViewController, MainTableDelegate {
         
         let toolbar   = UIToolbar()
         toolbar.frame = CGRectMake(0, 15, self.view.bounds.width, 50 )
-        let labelBtn : UIBarButtonItem = UIBarButtonItem( title: "Sample Test", style : .Plain, target: self, action : nil )
+        let labelBtn  = UIBarButtonItem( title: "Sample Test", style : .Plain, target: self, action : nil )
         labelBtn.setTitleTextAttributes( [NSFontAttributeName: UIFont(name:"Helvetica-Bold",size:14)!] , forState: UIControlState.Normal )
         
         let speceBtn = UIBarButtonItem( barButtonSystemItem : UIBarButtonSystemItem.FlexibleSpace, target : self, action: nil )

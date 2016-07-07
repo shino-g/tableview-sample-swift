@@ -29,7 +29,6 @@ class MainTableViewController: UITableViewController
     
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        NSLog( "高さ = \(model_list.count)" )
         return model_list.count
     }
     
